@@ -1,44 +1,48 @@
 "use client";
+import { FaChevronRight } from "react-icons/fa6";
 
 import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-gray-50 mt-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        {/* Paper-like card container */}
-        <div className="bg-white shadow-lg rounded-lg p-8 md:flex items-center gap-8">
-          {/* Left section: Top-notch Experts */}
-          <div className="flex-1 space-y-4">
-            <div className="grid grid-cols-3 gap-4 text-center">
+      <div className="grid grid-cols-3 gap-4 text-center border-b border-gray-300 pb-5">
               <div className="font-semibold text-lg">Top-notch Experts</div>
               <div className="font-semibold text-lg">Dedicated Support 24/7</div>
               <div className="font-semibold text-lg">Flexible Pricing</div>
             </div>
-            <div className="border-t border-gray-300 my-4"></div>
-            <div className="flex items-center gap-4">
+        <div className="bg-white p-8 flex items-center">
+          <div className="flex-1 space-y-4">
+            
+            <div className="flex flex-col items-center gap-4 -ml-52">
               <div className="flex items-center -space-x-4">
-                {/* Profile pictures */}
                 <img
                   src="/114649634.jpg"
                   alt="Profile 1"
-                  className="w-16 h-16 rounded-full border-4 border-white shadow-md"
+                  className="w-40 h-auto rounded-full border-4 border-white shadow-md"
                 />
                 <img
-                  src="/1728331836903.jpg"
+                  src="/1728331836903.png"
                   alt="Profile 2"
-                  className="w-16 h-16 rounded-full border-4 border-white shadow-md"
+                  className="w-40 h-auto rounded-full border-4 border-white shadow-md"
                 />
               </div>
-              <div className="text-sm font-medium">Founders of Hubfolio</div>
+              <div className="text-lg font-medium -ml-40 ">Founders of <br /> treeD</div>
             </div>
           </div>
 
-          {/* Right section: Text */}
-          <div className="flex-1 text-lg font-medium leading-relaxed text-gray-800">
-            We help businesses elevate their value through custom software
-            development, product design, QA, and consulting services.
+          
+        <div>
+        <div className="flex-1 text-3xl font-medium leading-relaxed text-gray-800 -ml-28 ">
+            We help businesses elevate their value <br /> through custom software <br />
+            development, product design, QA, and <br /> consulting services.
           </div>
+          <button className="bg-[#145b2f] mt-5 text-white text-sm px-5 py-2 rounded-full flex items-center -ml-28 ">
+          More About Us <FaChevronRight />
+
+          </button>
+        </div>
         </div>
       </div>
     </section>
